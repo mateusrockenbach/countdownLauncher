@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Launcher</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="bckg-header"></div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <div id="left">
+                    <div class="title">
+                        <h2>READY TO LAUNCH IN</h2>
+                    </div>
+                    <div id="counter">
+                        <div id="counter-timer" class="time">
+                            <div class="time-div"><p>Days</p></div>
+                            <div class="time-div dots"><p>:</p></div>
+                            <div class="time-div hours"><p>Hours</p></div>
+                            <div class="time-div dots"><p>:</p></div>
+                            <div class="time-div minutes"><p>Minutes</p></div>
+                            <div class="time-div dots"><p>:</p></div>
+                            <div class="time-div seconds"><p>Seconds</p></div>
+                        </div>
+                    </div>
+                    <div class="legend">
+                        <p>Subscribe to get to know more about the launcher</p>
+                    </div>
+                    <div id="actions" class="actions">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+                <div id="right">
+                    <div>
+                        <img src="./assets/rocket.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bckg-footer">
+    </footer>
+
+    <div id="modal-wrapper" class="modal-wrapper">
+        <div class="modal">
+            <div class="close">  
+                <a id="close-button" href="#0">          
+                    <img class="action-close" src="./assets/close-modal.svg" alt="">
+                </a>
+            </div>
+            <h2>Inform your name and e-mail</h2>
+            <p>to get to know more about it.</p>
+            <form action="">
+                <label for="name" class="src-only">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <label for="email" class="src-only">E-mail:</label>
+                <input type="email" name="e-mail" id="e-mail" placeholder="E-mail">
+                <button type="submit" name="submit-button" id="submit-button" class="submit-button">SEND
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/global.js"></script>
+</body>
+</html>
